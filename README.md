@@ -20,7 +20,7 @@ command:  jupyter lab --allow-root --notebook-dir= local_drive/ --ip=0.0.0.0 --p
 ```
 
 
-Project Organization
+## Project Organization
 ------------
 There is a also a Makefile to simply the execution of docker commands.  
 
@@ -37,3 +37,5 @@ There is a also a Makefile to simply the execution of docker commands.
 └── docker-files            <- Folder containing docker files 
     └── jupyter-lab         <- The jupyter lab Dockerfile 
     └── requirements.txt    <- Python packages to be installed       
+
+------------
