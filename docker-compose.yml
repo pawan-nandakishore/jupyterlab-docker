@@ -1,0 +1,15 @@
+version: '2.3'
+services:
+  lab:
+    container_name: jupyter-docker
+    
+    build:
+      context: ./docker-files/
+    
+    ports:
+      - "8889:8889"
+    
+    volumes: 
+      - ./:/local_drive
+  
+    command:  jupyter lab --allow-root --notebook-dir= local_drive/ --ip=0.0.0.0 --port=8889 --no-browser
