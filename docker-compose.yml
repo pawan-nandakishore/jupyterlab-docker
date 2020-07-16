@@ -4,7 +4,7 @@ services:
     container_name: jupyter-docker
     
     build:
-      context: ./docker-files/
+      context: ./docker-files/jupyter-lab/
     
     ports:
       - "8889:8889"
@@ -12,4 +12,4 @@ services:
     volumes: 
       - ./:/user_files
   
-    command:  jupyter lab --allow-root --notebook-dir= local_drive/ --ip=0.0.0.0 --port=8889 --no-browser
+    command:  jupyter lab --allow-root --notebook-dir= user_files/ --ip=0.0.0.0 --port=8889 --no-browser

@@ -10,6 +10,6 @@ RUN apt install curl -y
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash - 
 RUN apt install nodejs  -y
 
-COPY ./requirements.txt ./requirements.txt
-RUN pip3 install -r requirements.txt
+COPY ./requirements.txt ./user_files/requirements.txt
+RUN pip3 install -r ./user_files/requirements.txt
 

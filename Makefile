@@ -1,11 +1,11 @@
 rmc: 
-ifneq (($$(docker ps -q -f name=${C})),)
-	@eval docker stop ${C} 	
-	@eval docker rm ${C}
+ifneq (($$(docker ps -q -f name=${c})),)
+	@eval docker stop ${c} 	
+	@eval docker rm ${c}
 endif	
-ifeq ($$(docker ps -aq -f status=exited -f name=${C}),)
+ifeq ($$(docker ps -aq -f status=exited -f name=${c}),)
  	# cleanup
-	@eval docker rm ${C}
+	@eval docker rm ${c}
 endif
 
 build: 
@@ -29,3 +29,9 @@ rm-dangling:
  
 rm-containers: 
 	@eval docker container rm $$(docker container ls –aq) 
+
+bash: 
+	@eval docker exec -it  ${c} bash 
+
+make clean: 
+	@eval docker rmi jupyter-docker
