@@ -20,9 +20,8 @@ command:  jupyter lab --allow-root --notebook-dir= local_drive/ --ip=0.0.0.0 --p
 ```
 
 
-
-
-
+Project Organization
+------------
 There is a also a Makefile to simply the execution of docker commands.  
 
 ├── LICENSE
