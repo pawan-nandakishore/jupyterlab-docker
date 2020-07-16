@@ -26,9 +26,9 @@ There is a also a Makefile to simply the execution of docker commands.
 ------------
 
 
-I have been experimenting with this framework for a month and found it to be exteremely convinient for running Jupyter lab.
+I have been experimenting with this framework for a while and found it to be exteremely convinient for running Jupyter lab.
 
-Building the dockerfile will  install Jupyter lab along with nodejs in a docker container. Nodejs is need for running Jupyter extensions hence straight out of the box you should be able to use the Jupyter lab extensions. 
+Building the dockerfile will install Jupyter lab along with nodejs in a docker container. Nodejs is need for running Jupyter extensions hence straight out of the box you should be able to use the Jupyter lab extensions. 
 
 The build also includes many DS/ML packages notably - sklearn, scipy, pandas. It also contains psycopg2 to connect to postgres database
 
