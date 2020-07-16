@@ -10,6 +10,6 @@ services:
       - "8889:8889"
     
     volumes: 
-      - ./:/local_drive
+      - ./:/user_files
   
     command:  jupyter lab --allow-root --notebook-dir= local_drive/ --ip=0.0.0.0 --port=8889 --no-browser
