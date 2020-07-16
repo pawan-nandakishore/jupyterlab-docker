@@ -1,5 +1,5 @@
 # Jupyter-lab in Docker 
-The repo contains a framework for running Jupyter lab in a docker container. To install docker please visit [https://docs.docker.com/get-docker/]. 
+The repo contains a framework for running Jupyter lab in a docker container. To install docker please visit (https://docs.docker.com/get-docker/) and  (https://docs.docker.com/compose/install/)
 I have been experimenting with this framework for a month and found it to be exteremely convinient for running Jupyter lab.
 
 Building the dockerfile will  installs Jupyter lab along with nodejs in a docker container. Nodejs is need for running Jupyter extensions hence straight out of the box you should be able to use the Jupyter lab extensions. 
