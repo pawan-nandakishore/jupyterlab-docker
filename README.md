@@ -1,6 +1,31 @@
 # Jupyter-lab in Docker 
 The repo contains a framework for running Jupyter lab in a docker container. To install docker please visit (https://docs.docker.com/get-docker/) and  (https://docs.docker.com/compose/install/)
 
+
+
+
+## Project Organization
+------------
+```
+There is a also a Makefile to simply the execution of docker commands.  
+
+├── LICENSE
+├── Makefile                <- Makefile with commands like `make data` or `make train`
+├── README.md               <- The top-level README for developers using this project.
+├── data
+│   ├── external            <- Data from third party sources.
+│   ├── interim             <- Intermediate data that has been transformed.
+│   ├── processed           <- The final, canonical data sets for modeling.
+│   └── raw                 <- The original, immutable data dump.
+│
+├── notebooks               <- Jupyter notebooks.
+└── docker-files            <- Folder containing docker files 
+    └── jupyter-lab         <- The jupyter lab Dockerfile 
+    └── requirements.txt    <- Python packages to be installed       
+```
+------------
+
+
 I have been experimenting with this framework for a month and found it to be exteremely convinient for running Jupyter lab.
 
 Building the dockerfile will  install Jupyter lab along with nodejs in a docker container. Nodejs is need for running Jupyter extensions hence straight out of the box you should be able to use the Jupyter lab extensions. 
@@ -76,27 +101,6 @@ make clean
 
 More commands will be added overtime. 
 
-
-## Project Organization
-------------
-```
-There is a also a Makefile to simply the execution of docker commands.  
-
-├── LICENSE
-├── Makefile                <- Makefile with commands like `make data` or `make train`
-├── README.md               <- The top-level README for developers using this project.
-├── data
-│   ├── external            <- Data from third party sources.
-│   ├── interim             <- Intermediate data that has been transformed.
-│   ├── processed           <- The final, canonical data sets for modeling.
-│   └── raw                 <- The original, immutable data dump.
-│
-├── notebooks               <- Jupyter notebooks.
-└── docker-files            <- Folder containing docker files 
-    └── jupyter-lab         <- The jupyter lab Dockerfile 
-    └── requirements.txt    <- Python packages to be installed       
-```
-------------
 
 
 ## References
