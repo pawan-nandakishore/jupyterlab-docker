@@ -36,7 +36,7 @@ ipywidgets==7.5.0
 itsdangerous==1.1.0
 jedi==0.17.1
 jellyfish==0.6.1
-Jinja2==2.11.2
+Jinja2==2.11.3
 jmespath==0.10.0
 joblib
 json5==0.9.5
