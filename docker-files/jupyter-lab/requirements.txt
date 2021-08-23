@@ -51,7 +51,7 @@ jupyter-dash==0.2.1.post1
 jupyter-highlight-selected-word==0.2.0
 jupyter-latex-envs==1.4.6
 jupyter-nbextensions-configurator==0.4.1
-jupyterlab==2.1.5
+jupyterlab==2.2.10
 jupyterlab-server==1.2.0
 keyring==10.6.0
 keyrings.alt==3.0
